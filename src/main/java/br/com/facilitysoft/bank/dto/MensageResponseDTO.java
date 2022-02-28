@@ -1,12 +1,25 @@
 package br.com.facilitysoft.bank.dto;
 
-import lombok.Builder;
-import lombok.Data;
+import java.io.Serializable;
 
-@Data
-@Builder
-public class MensageResponseDTO {
+public class MensageResponseDTO implements Serializable{
 	
-	private String mensage;		
+	private static final long serialVersionUID = 1L;
+	private String mensage;
+
+	public MensageResponseDTO(String mensage) {
+		super();
+		this.mensage = mensage;
+	}
+
+	public String getMensage() {
+		return mensage;
+	}
+
+	public void setMensage(String mensage) {
+		this.mensage = mensage;
+	}	
+	
+	
 		
 }
