@@ -44,6 +44,9 @@ cd bank
 ./mvnw spring-boot:run
 ```
 
+## Caso prefira não baixar o projeto você pode executar os teste pelo servidor Heroku onde hospedei a API para testes.
+Link https://facility-bank.herokuapp.com/api/v1/people 
+
 ## Como testar 
 O sistema possui os endpoints: 
 <br>
