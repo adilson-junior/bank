@@ -4,7 +4,7 @@ API que realiza um CRUD para simular um cadastro de pessoas.
 
 Para cada tipo de processamento, é necessário enviar os dados no formato JSON.
 
-A API verifica se o CPF e EMAIL são validos ou se já existem no sistema, se a DATA de NASCIMENTO é no passodo e se a quantidade de carcacteries do NOME e maior que 3 e menor que 100. Caso algum desses dados não corresponda a regra implementada, uma exception será lançada. 
+A API verifica se o CPF e EMAIL são validos ou se já existem no sistema, se a DATA de NASCIMENTO é no passoado e se a quantidade de carcacteries do NOME e maior que 3 e menor que 100. Caso algum desses dados não corresponda as regras implementadas, uma exception será lançada informando o que não está correspondendo com as regras da API. 
 
 A API permite consultar os dados por ID e de todos os cadastros.
 
@@ -86,7 +86,7 @@ O sistema possui os endpoints:
 }
 ```
 
-**``GET /api/v1/people/1``**: Envia uma requisição de consulta de cadastro por id informado na URL.
+**``GET /api/v1/people/1``**: Envia uma requisição de consulta por id informado na URL.
 <br>
 *Exemplo do corpo da resposta para consulta por id:*
 ```bash
@@ -98,7 +98,7 @@ O sistema possui os endpoints:
     "birthDate":"1983-01-01"
 }
 ```
-**``GET /api/v1/people``**: Envia uma requisição de consulta de todos cadastros.
+**``GET /api/v1/people``**: Envia uma requisição de consulta de todos.
 <br>
 *Exemplo do corpo da resposta para consulta de pagamentos
 ```bash
